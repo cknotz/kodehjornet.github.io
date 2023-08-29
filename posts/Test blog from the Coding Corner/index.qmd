@@ -8,7 +8,7 @@ image: "image.jpg"
 
 Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.
 
-Below you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next? Test
+Below you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next? Test fra Petter sin maskin
 
 ```{r}
 1 + 1
