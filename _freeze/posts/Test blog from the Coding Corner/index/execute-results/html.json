@@ -1,0 +1,14 @@
+{
+  "hash": "d1e90f5e9c36c27d328a3d1e3224d8ae",
+  "result": {
+    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Knut Solvig\"\ndate: \"2023-08-22\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nWelcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.\n\nBelow you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
