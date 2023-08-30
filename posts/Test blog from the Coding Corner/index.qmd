@@ -8,10 +8,6 @@ image: "image.jpg"
 
 Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.
 
-Hei hei nå ser det ut som det fungerer.
-
-Test fra Petter hei hei
-
 Below you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?
 
 ```{r}
