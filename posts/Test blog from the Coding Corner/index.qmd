@@ -13,3 +13,5 @@ Below you can see a really quick function in R, it is actually just 1+1! Can you
 ```{r}
 1 + 1
 ```
+
+However, this blog post will be looking at the linear function!
