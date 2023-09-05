@@ -1,7 +1,7 @@
 {
-  "hash": "541262ddeed75ed19f803796fbfa1a9d",
+  "hash": "ce7e7d4b5a86e3e7d7b83cc861430974",
   "result": {
-    "markdown": "---\ntitle: \"Welcome to the Coding Corner!\"\nauthor: \"Knut Solvig\"\ndate: \"2023-08-22\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nWelcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.\n\nTesting Stage.\n\nBelow you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Welcome to the Coding Corner!\"\nauthor: \"Knut Solvig\"\ndate: \"2023-08-22\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nWelcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.\n\nBelow you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
