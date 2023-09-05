@@ -4,14 +4,35 @@
     "href": "posts/Test blog from the Coding Corner/index.html",
     "title": "Welcome to the Coding Corner!",
     "section": "",
-    "text": "Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.\nBelow you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?\n\n1 + 1\n\n[1] 2\n\n\nHowever, this blog post will be looking at the linear function!"
+    "text": "Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.\nBelow you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?\n\n1 + 1\n\n[1] 2\n\n\nLuckily, we think you are smarter than this, so this blog will include more than simple equations like 1+1. For example, you’ll learn more about linear functions as well as case selection! Hope it helps you out!"
+  },
+  {
+    "objectID": "posts/Case selection blog post/index.html",
+    "href": "posts/Case selection blog post/index.html",
+    "title": "Case selection 101",
+    "section": "",
+    "text": "Welcome to this blog post about the wonders of case selection in quantitative methods!"
+  },
+  {
+    "objectID": "posts/Case selection blog post/index.html#micro-cases",
+    "href": "posts/Case selection blog post/index.html#micro-cases",
+    "title": "Case selection 101",
+    "section": "Micro cases",
+    "text": "Micro cases\nMicro cases looks at individual cases. For example, the European Social Survey dataset (ESS) is a typical micro case dataset. Here you will find observations from individuals and their answers on different questions."
+  },
+  {
+    "objectID": "posts/Case selection blog post/index.html#macro-cases",
+    "href": "posts/Case selection blog post/index.html#macro-cases",
+    "title": "Case selection 101",
+    "section": "Macro cases",
+    "text": "Macro cases\nFurther, you can also choose a macro case, which is to look at a research question from a national or international perspective. Here you for example compare the democratic value of a country with another country."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "kodehjornet.github.io",
+    "title": "Kodehjørnet ved UiS",
     "section": "",
-    "text": "Welcome to the Coding Corner!\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\nNo matching items"
+    "text": "Case selection 101\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\ncase\n\n\nselection\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to the Coding Corner!\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

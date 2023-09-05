@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Kodehjørnet ved UiS"
+  title: "kodehjornet.github.io"
   navbar:
     right:
       - about.qmd
@@ -13,8 +13,8 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: cosmo
+    theme: journal
     css: styles.css
-
+  
 editor: visual
 
