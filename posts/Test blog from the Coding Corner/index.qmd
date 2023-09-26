@@ -1,17 +1,14 @@
 ---
 title: "Welcome to the Coding Corner!"
-author: "Knut Solvig"
-date: "2023-08-22"
+author: "Knut Solvig and Petter Knardahl"
+date: "2023-09-26"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "initialblog.jpg"
 ---
 
 Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.
 
 Below you can see a really quick function in R, it is actually just 1+1! Can you understand what comes next?
+This blog is created to help you as a student (and employee) to understand the different things which revolve around the quantitative methods universe. These blog posts are created during the Coding corner seminars.
 
-```{r}
-1 + 1
-```
-
-Luckily, we think you are smarter than this, so this blog will include more than simple equations like 1+1. For example, you'll learn more about linear functions as well as case selection! Hope it helps you out!
+Are you interested in us creating a blog post about something which you want to learn more about? Feel free to send an email to *codinghjornet\@gmail.com.*
