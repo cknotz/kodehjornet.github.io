@@ -3,7 +3,7 @@ title: "The normal distribution"
 author: "Knut Solvig"
 date: "2023-09-26"
 categories: [how-to, code, case, selection, quantitative]
-image: "bellcurve_standarddeviation.png"
+image: "titleimage.png"
 ---
 
 In this blog post I wish to use some time to talk about the normal distribution or the *bell curve.*
@@ -25,11 +25,11 @@ plot(X, f.x, type = 'l', col = "red", lwd=3)
 
 The great thing about a bell curve is that you can use the **68-95-99** rule on it (like mentioned in Kellstedt & Whitten page. 150). This rule is basically the amount of data that are within the standard deviations of the mean in the graph. See the example below:
 
-![](images/bellcurve_standarddeviation-01.png){width="280"}
+![](images/bellcurve_standarddeviation-01.png){width="392"}
 
-![](images/95percent.png){width="279"}
+![](images/95percent.png){width="387"}
 
-![](images/99percent.png){width="278"}
+![](images/99percent.png){width="389"}
 
 A way to understand how the bell curve works is to imagine that you roll a dice 1000 times. You are more likely to get a 3 or a 4 than you are to get 6 or 1, in that way everytime you plot into your dataset a dice throw you are creating a graph which should be relatively evenly distributed - like a bell curve.
 

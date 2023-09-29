@@ -3,7 +3,7 @@ title: "Welcome to the Coding Corner!"
 author: "Knut Solvig and Petter Knardahl"
 date: "2023-09-26"
 categories: [news, code, analysis]
-image: "initialblog.jpg"
+image: "titleimage.png"
 ---
 
 Welcome to the Coding Corner! This is a project from the Institute of Media and Social Sciences at the University of Stavanger.

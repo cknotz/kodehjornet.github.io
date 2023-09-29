@@ -3,7 +3,7 @@ title: "Case selection 101"
 author: "Knut Solvig"
 date: "2023-09-05"
 categories: [how-to, code, case, selection, quantitative]
-image: "image.jpeg"
+image: "titleimage.jpg"
 ---
 
 **Welcome to this blog post about the wonders of case selection in quantitative methods!**
