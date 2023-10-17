@@ -32,7 +32,7 @@ Når b er mindre en null, er effekten negativ: Hvis X øker, minker Y, og hvis X
 
 Den statistiske lineære funksjonen, spesifikt innenfor konteksten av enkel lineær regresjon, har en lignende form som den matematiske lineære funksjonen, men tolkningen og konteksten er noe annerledes. Formelen er:
 
-Y=β0+β1X+ϵ
+Y = β0 + β1X + ϵ
 
 Her representerer:
 
