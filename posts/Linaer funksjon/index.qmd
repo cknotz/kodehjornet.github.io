@@ -1,0 +1,49 @@
+---
+title: "Lineær funksjon"
+author: "Petter Knardahl"
+date: "2023-10-17"
+categories: [how-to, code, linear function, regression, quantitative, Norwegian]
+image: "titleimage.png"
+---
+
+**Hva er regresjon?**
+
+Mange studenter har glemt hva de lærte om regresjon på videregående skole. Dette innlegget har som hensikt å gi en oppfriskning ved å vise det mest grunnleggende innen regresjon: den lineære funksjonen.
+
+Regresjonskoffisienter er et statistisk mål på forholdet mellom variabler. Når vi beregner regresjonskoffisienter, bruker vi regresjonsanalyse. Det finnes mange forskjellige former for regresjonsanalyse som brukes til mange ulike formål.
+
+**Regresjonslinjen**
+
+Regresjonsanalyse gir oss en linje som beskriver korrelasjonen mellom våre variabler. Det er denne linjen som er grunnlaget for all regresjonsanalyse.
+
+**Den matematiske lineære funksjonen**
+
+I matematikken representerer en lineær funksjon en rett linje når den plottes i et koordinatsystem. Den kan beskrives med formelen: 
+
+Y = a + bX
+
+I denne funksjonen indikerer konstantleddet, a, gjennomsnittsverdien av Y når X er lik null. Helningskoffisienten, b, indikerer hvor mye Y i gjennomsnitt øker eller minker for en enhets økning i X.
+
+Når b er større en null er effekten positiv: En økning i X fører til en økning i Y, og en reduksjon i X resulterer i en reduksjon i Y. For eksempel, hvis b er lik 5, øker Y med 5 enheter når X øker med 1 enhet.
+
+Når b er mindre en null, er effekten negativ: Hvis X øker, minker Y, og hvis X minker, øker Y. Hvis, for eksempel, b er lik -2, minker Y med to enheter når X øker med en
+enhet.
+
+**Den statistiske lineære funksjonen**
+
+Den statistiske lineære funksjonen, spesifikt innenfor konteksten av enkel lineær regresjon, har en lignende form som den matematiske lineære funksjonen, men tolkningen og konteksten er noe annerledes. Formelen er:
+
+Y=β0+β1X+ϵ
+
+Her representerer:
+
+-   Y er den avhengige variabelen vi ønsker å forklare
+
+-   X er den uavhengige variabelen vi bruker for å gjøre forklaringene
+
+-   B0 (Beta null) er konstantleddet, eller den forventede verdien av Y når X = 0
+
+-   Β1 (Beta en) er
+    helningskoffisienten, eller endringen i Y for en enhetsendring i X.
+
+-   ϵ (Epsilon) er en tilfeldig feilterm som fanger opp alle andre faktorer som påvirker Y men som ikke er inkludert i modellen.

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Knut Solvig">
-<meta name="dcterms.date" content="2023-09-05">
+<meta name="author" content="Petter Knardahl">
+<meta name="dcterms.date" content="2023-10-17">
 
-<title>kodehjornet.github.io - Case selection 101</title>
+<title>kodehjornet.github.io - Lineær funksjon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,13 +105,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Case selection 101</h1>
+      <h1 class="title">Lineær funksjon</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">how-to</div>
                 <div class="quarto-category">code</div>
-                <div class="quarto-category">case</div>
-                <div class="quarto-category">selection</div>
+                <div class="quarto-category">linear function</div>
+                <div class="quarto-category">regression</div>
                 <div class="quarto-category">quantitative</div>
+                <div class="quarto-category">Norwegian</div>
               </div>
                   </div>
   </div>
@@ -122,14 +123,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Knut Solvig </p>
+               <p>Petter Knardahl </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 5, 2023</p>
+        <p class="date">October 17, 2023</p>
       </div>
     </div>
     
@@ -147,23 +148,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><strong>Welcome to this blog post about the wonders of case selection in quantitative methods!</strong></p>
-<section id="macro-or-micro" class="level1">
-<h1>Macro or micro?</h1>
-<p>One crucial step when starting your study is to decide what kind of concept you wish to measure.</p>
-<section id="micro-cases" class="level2">
-<h2 class="anchored" data-anchor-id="micro-cases">Micro cases</h2>
-<p>Micro cases looks at individual cases. For example, the European Social Survey dataset (ESS) is a typical micro case dataset. Here you will find observations from individuals and their answers on different questions.</p>
-</section>
-<section id="macro-cases" class="level2">
-<h2 class="anchored" data-anchor-id="macro-cases">Macro cases</h2>
-<p>Further, you can also choose a macro case, which is to look at a research question from a national or international perspective. Here you for example compare the democratic value of a country with another country.</p>
-<p>One important thing to note when selecting your case is that you need to be able to justify why your case is the best for answering your research question. For example, do not choose to look at Norway as a case and justify it with “I live in Norway, therefore I want to look at Norway”. This is not a methodologically correct way of doing it. Instead, you can say that “previous research has looked at this phenomena through the lens of American countries, but by using Theory X it should also be the case in an European country like Norway.”</p>
-<p><em>Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">CHUTTERSNAP</a> on <a href="https://unsplash.com/photos/gDDas5_ALRw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+<p><strong>Hva er regresjon?</strong></p>
+<p>Mange studenter har glemt hva de lærte om regresjon på videregående skole. Dette innlegget har som hensikt å gi en oppfriskning ved å vise det mest grunnleggende innen regresjon: den lineære funksjonen.</p>
+<p>Regresjonskoffisienter er et statistisk mål på forholdet mellom variabler. Når vi beregner regresjonskoffisienter, bruker vi regresjonsanalyse. Det finnes mange forskjellige former for regresjonsanalyse som brukes til mange ulike formål.</p>
+<p><strong>Regresjonslinjen</strong></p>
+<p>Regresjonsanalyse gir oss en linje som beskriver korrelasjonen mellom våre variabler. Det er denne linjen som er grunnlaget for all regresjonsanalyse.</p>
+<p><strong>Den matematiske lineære funksjonen</strong></p>
+<p>I matematikken representerer en lineær funksjon en rett linje når den plottes i et koordinatsystem. Den kan beskrives med formelen:&nbsp;</p>
+<p>Y = a + bX</p>
+<p>I denne funksjonen indikerer konstantleddet, a, gjennomsnittsverdien av Y når X er lik null. Helningskoffisienten, b, indikerer hvor mye Y i gjennomsnitt øker eller minker for en enhets økning i X.</p>
+<p>Når b er større en null er effekten positiv: En økning i X fører til en økning i Y, og en reduksjon i X resulterer i en reduksjon i Y. For eksempel, hvis b er lik 5, øker Y med 5 enheter når X øker med 1 enhet.</p>
+<p>Når b er mindre en null, er effekten negativ: Hvis X øker, minker Y, og hvis X minker, øker Y. Hvis, for eksempel, b er lik -2, minker Y med to enheter når X øker med en enhet.</p>
+<p><strong>Den statistiske lineære funksjonen</strong></p>
+<p>Den statistiske lineære funksjonen, spesifikt innenfor konteksten av enkel lineær regresjon, har en lignende form som den matematiske lineære funksjonen, men tolkningen og konteksten er noe annerledes. Formelen er:</p>
+<p>Y=β0+β1X+ϵ</p>
+<p>Her representerer:</p>
+<ul>
+<li><p>Y er den avhengige variabelen vi ønsker å forklare</p></li>
+<li><p>X er den uavhengige variabelen vi bruker for å gjøre forklaringene</p></li>
+<li><p>B0 (Beta null) er konstantleddet, eller den forventede verdien av Y når X = 0</p></li>
+<li><p>Β1 (Beta en) er helningskoffisienten, eller endringen i Y for en enhetsendring i X.</p></li>
+<li><p>ϵ (Epsilon) er en tilfeldig feilterm som fanger opp alle andre faktorer som påvirker Y men som ikke er inkludert i modellen.</p></li>
+</ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
