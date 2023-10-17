@@ -3,7 +3,7 @@ title: "Lineær funksjon"
 author: "Petter Knardahl"
 date: "2023-10-17"
 categories: [how-to, code, linear function, regression, quantitative, Norwegian]
-image: "titleimage.png"
+image: "regression_line.png"
 ---
 
 **Hva er regresjon?**
