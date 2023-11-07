@@ -19,6 +19,7 @@ For å importere data fra SSB til R trenger man en pakke som heter `PxWebApiData
 Følgende kode vil installere og laste inn pakken som trengs videre. Jeg laster også inn `tidyverse` da denne er nyttig for senere når vi skal visualisere funnene fra SSB:
 
 ```{r}
+#| echo=T, results='hide'
 if (!require("PxWebApiData")) install.packages("PxWebApiData") # Install package PxWebApiData if not found.
 library(PxWebApiData) # Load PxWebApiData package
 library(tidyverse) # Load tidyverse package
