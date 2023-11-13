@@ -1,0 +1,75 @@
+---
+title: "Problemer med Norske bokstaver i R? (Æ,Ø,Å)"
+author: "Petter Knardahl"
+date: "2023-11-13"
+categories: [bug, norwegian]
+image: "kode.jpg"
+---
+
+Hei! Dette er en post som viser noen løsninger på problemer med norske bokstaver i R. Det ser ut til at noen versjoner av R/Rstudio har problemer med å lese de norske bokstavene: Æ, Ø og Å. For å løse dette problemet anbefaler jeg først å sjekke om du har installert den siste versjonen av R og Rstudio.
+
+Du kan kjapt sjekke om det fungerer ved å skrive dette inn i console:
+
+```{r}
+print("æ")
+```
+
+Hvis det ikke fungerer vil du få opp:
+
+![](Feilmelding.png)
+
+Dersom det ikke fungerer så har du tre løsninger.
+
+**Løsning 1:**
+
+Prøv å sett Locale navnet til Nynorsk eller bokmål ved å skrive dette inn i console:
+
+```{r}
+Sys.setlocale("LC_ALL", "nb_NO.UTF-8")
+```
+
+eller
+
+```{r}
+Sys.setlocale("LC_ALL","nn_NO.UTF-8")
+```
+
+Avhengig av operativsystemet ditt og dens konfigurasjoner så kan det hende at en av disse fungerer. Dersom det ikke fungerer, gå videre til løsning 2.
+
+**Løsning 2:**
+
+På min macbook så fungerte ikke løsning 1. Jeg prøvde istedenfor å sette Locale til engelsk med UTF-8 kode. UTF-8 skal fortsatt støtte norske bokstaver. Dette fungerte for meg:
+
+```{r}
+Sys.setlocale("LC_ALL","en_US.UTF-8")
+```
+
+En ting å ha i bakhodet er at dette ikke er en langvarig "fix". For hver ny gang du åpner R og planlegger å bruke norske bokstaver så må du skrive inn koden.
+
+**Løsning 3:**
+
+En langvarig løsning som fungerte for meg var å endre ".Renviron" filen i R.
+
+Du kan finne filen ved å skrive inn dette i console:
+
+```{r}
+file.edit(file.path(Sys.getenv("HOME"), ".Renviron"))
+```
+
+Deretter må du skrive og lagre:
+
+```{r}
+LC_ALL="en_US.UTF-8"
+```
+
+Eksempel:
+
+![](Renviron.png)
+
+```{r}
+file.edit(file.path(Sys.getenv("HOME"), ".Renviron"))
+```
+
+Håper dette var til hjelp! Anbefaler å sjekke ut [denne](https://github.com/rstudio/rstudio/issues/12668) diskusjonen på Github dersom du fortsatt har problemer.
+
+*Foto av James Harrison på [Unsplash](https://unsplash.com/photos/gDDas5_ALRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
