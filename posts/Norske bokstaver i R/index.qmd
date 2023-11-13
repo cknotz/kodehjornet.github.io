@@ -59,4 +59,4 @@ LC_ALL="en_US.UTF-8"
 
 Håper dette var til hjelp! Anbefaler å sjekke ut [denne](https://github.com/rstudio/rstudio/issues/12668) diskusjonen på Github dersom du fortsatt har problemer.
 
-Foto av Christopher Gower på [Unsplash](https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo)
+Forsidefoto av Christopher Gower på [Unsplash](https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo)
