@@ -10,7 +10,8 @@ Hei! Dette er en post som viser noen løsninger på problemer med norske bokstav
 
 Du kan kjapt sjekke om det fungerer ved å skrive dette inn i console:
 
-```{r}
+```{r, eval=FALSE}
+#| echo=T, results='hide'
 print("æ")
 ```
 
@@ -20,13 +21,15 @@ Dersom det ikke fungerer så har du tre løsninger.
 
 Prøv å sett Locale navnet til Nynorsk eller bokmål ved å skrive dette inn i console:
 
-```{r}
+```{r, eval=FALSE}
+#| echo=T, results='hide'
 Sys.setlocale("LC_ALL", "nb_NO.UTF-8")
 ```
 
 Eller
 
-```{r}
+```{r, eval=FALSE}
+#| echo=T, results='hide'
 Sys.setlocale("LC_ALL","nn_NO.UTF-8")
 ```
 
@@ -36,7 +39,8 @@ Avhengig av operativsystemet ditt og dens konfigurasjoner så kan det hende at e
 
 På min macbook så fungerte ikke løsning 1. Jeg prøvde istedenfor å sette Locale til engelsk med UTF-8 kode. UTF-8 skal fortsatt støtte norske bokstaver. Dette fungerte for meg:
 
-```{r}
+```{r, eval=FALSE}
+#| echo=T, results='hide'
 Sys.setlocale("LC_ALL","en_US.UTF-8")
 ```
 
@@ -46,14 +50,14 @@ En ting å ha i bakhodet er at dette ikke er en langvarig "fix". For hver gang d
 
 En langvarig løsning som fungerte for meg var å endre ".Renviron" filen din i R. Du kan finne denne filen ved å skrive dette inn i R:
 
-```{r}
-file.edit(file.path(Sys.getenv("HOME"), ".Renviron"))
-
+```{r, eval=FALSE}
+file.edit("~/.Renviron")
 ```
 
 Deretter må du skrive og lagre:
 
-```{r}
+```{r, eval=FALSE}
+#| echo=T, results='hide'
 LC_ALL="en_US.UTF-8"
 ```
 
