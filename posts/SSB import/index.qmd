@@ -14,7 +14,7 @@ Statistisk sentralbyrå (SSB) driver med innsamling og analyse av data om mange 
 
 For å importere data fra SSB til R trenger man en pakke som heter `PxWebApiData` . Dokumentasjonen på denne pakken kan være litt komplisert, og dermed lager vi dette blogg innlegget for å gjøre det enkelt for deg og forstå slik at du slipper å kaste bort verdifull tid! La oss begynne! *Nederst i blogg innlegget ligger det en lenke til `.R` filen slik at du selv kan prøve deg frem.*
 
-## Steg 1: Installere og laste inn `PxWebApiData` 
+## Steg 1: Installere og laste inn `PxWebApiData`
 
 Følgende kode vil installere og laste inn pakken som trengs videre. Jeg laster også inn `tidyverse` da denne er nyttig for senere når vi skal visualisere funnene fra SSB:
 
@@ -29,7 +29,7 @@ library(tidyverse) # Load tidyverse package
 
 Når du er inne i SSB kan du lete etter en tabell som du ønsker å bruke for å gjøre dine analyser. Se for eksempel på denne tabellen: [SSB - Stortingsvalget listekandidater](https://www.ssb.no/valg/stortingsvalg/statistikk/stortingsvalget-listekandidater). Dersom du scroller ned litt vil du se at denne tabellen har en kilde, det tallet tar du vare på. Se bilde nedenfor:
 
-![Kildenummer til en tabell](images/Screenshot 2023-11-07 at 10.29.10@2x.png){fig-align="center" width="340"}
+![Kildenummer til en tabell](images/Screenshot%202023-11-07%20at%2010.29.10@2x.png){fig-align="center" width="340"}
 
 ## Steg 3: Importer tabellen
 
