@@ -1,8 +1,8 @@
 ---
-title: "Lineær funksjon"
+title: "Lineær funksjon og prediktive modeller"
 author: "Petter Knardahl & Knut Solvig"
-date: "2023-10-17"
-categories: [how-to, code, linear function, regression, quantitative, Norwegian]
+date: "2023-12-09"
+categories: [how-to, code, linear function, regression, prediction, quantitative, Norwegian, English]
 image: "regression_line.png"
 ---
 
@@ -92,7 +92,7 @@ Now we summarize `model1`. Here we will get the information we need.
 
 Now, we have everything we need. For this part, you do not need to use R. Get out a calculator.
 
-Recall that the formula goes like this: $\hat{y} = ax + b$. Our $a$ in this example is $0.44147$ because that is the coefficient for "weight".
+Recall that the formula goes like this: $\hat{y} = ax + b$. Our $a$ in this example is $0.44147$ because that is the coefficient for `weight`.
 
 Our formula now then looks like this: $\hat{y} = 0.44147x + b$
 
