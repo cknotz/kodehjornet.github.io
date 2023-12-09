@@ -64,6 +64,7 @@ To simplify and understand how this formula works, consider the following minima
 
 ```{r}
 #| echo: false
+#| output: false
 library(tidyverse)
 weight <- c(50, 60, 70, 80, 90, 50, 60, 75)
 height <- c(160, 165, 170, 175, 180, 165, 168, 175)
@@ -72,7 +73,8 @@ height <- c(160, 165, 170, 175, 180, 165, 168, 175)
 Here we assign a few values to the new variables `weight` and `height`. *These values are artificial, only used for this example.*
 
 ```{r}
-#| echo: false
+#| echo: true
+#| output: false
 df <- data.frame(height, weight)
 
 model1 <- lm(height ~ weight, data = df)
@@ -82,6 +84,7 @@ Next, we assign these variables into a data frame (making it into a dataset). An
 
 ```{r}
 #| echo: true
+#| output: true
 summary(model1)
 ```
 
