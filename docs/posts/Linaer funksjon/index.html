@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -61,6 +95,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -150,18 +186,25 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><strong>Hva er regresjon?</strong></p>
+<section id="hva-er-regresjon" class="level1">
+<h1><strong>Hva er regresjon?</strong></h1>
 <p>Mange studenter har glemt hva de lærte om regresjon på videregående skole. Dette innlegget har som hensikt å gi en oppfriskning ved å vise det mest grunnleggende innen regresjon: den lineære funksjonen.</p>
 <p>Regresjonskoffisienter er et statistisk mål på forholdet mellom variabler. Når vi beregner regresjonskoffisienter, bruker vi regresjonsanalyse. Det finnes mange forskjellige former for regresjonsanalyse som brukes til mange ulike formål.</p>
-<p><strong>Regresjonslinjen</strong></p>
+</section>
+<section id="regresjonslinjen" class="level1">
+<h1><strong>Regresjonslinjen</strong></h1>
 <p>Regresjonsanalyse gir oss en linje som beskriver korrelasjonen mellom våre variabler. Det er denne linjen som er grunnlaget for all regresjonsanalyse.</p>
-<p><strong>Den matematiske lineære funksjonen</strong></p>
+</section>
+<section id="den-matematiske-lineære-funksjonen" class="level1">
+<h1><strong>Den matematiske lineære funksjonen</strong></h1>
 <p>I matematikken representerer en lineær funksjon en rett linje når den plottes i et koordinatsystem. Den kan beskrives med formelen:&nbsp;</p>
 <p>Y = a + bX</p>
 <p>I denne funksjonen indikerer konstantleddet, a, gjennomsnittsverdien av Y når X er lik null. Helningskoffisienten, b, indikerer hvor mye Y i gjennomsnitt øker eller minker for en enhets økning i X.</p>
 <p>Når b er større en null er effekten positiv: En økning i X fører til en økning i Y, og en reduksjon i X resulterer i en reduksjon i Y. For eksempel, hvis b er lik 5, øker Y med 5 enheter når X øker med 1 enhet.</p>
 <p>Når b er mindre en null, er effekten negativ: Hvis X øker, minker Y, og hvis X minker, øker Y. Hvis, for eksempel, b er lik -2, minker Y med to enheter når X øker med en enhet.</p>
-<p><strong>Den statistiske lineære funksjonen</strong></p>
+</section>
+<section id="den-statistiske-lineære-funksjonen" class="level1">
+<h1><strong>Den statistiske lineære funksjonen</strong></h1>
 <p>Den statistiske lineære funksjonen, spesifikt innenfor konteksten av enkel lineær regresjon, har en lignende form som den matematiske lineære funksjonen, men tolkningen og konteksten er noe annerledes. Formelen er:</p>
 <p>Y = β0 + β1X + ϵ</p>
 <p>Her representerer:</p>
@@ -172,8 +215,40 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Β1 (Beta en) er helningskoffisienten, eller endringen i Y for en enhetsendring i X.</p></li>
 <li><p>ϵ (Epsilon) er en tilfeldig feilterm som fanger opp alle andre faktorer som påvirker Y men som ikke er inkludert i modellen.</p></li>
 </ul>
+</section>
+<section id="linear-regression---predictive-model" class="level1">
+<h1>Linear regression - predictive model</h1>
+<p><em>Denne delen av innlegget skulle egentlig være på norsk, men jeg (Knut) begynte bare å skrive engelsk… beklager ;) Dersom du sliter med å forstå på engelsk kan jeg anbefale nettsiden <a href="deepl.com">deepl.com</a> for å oversette. Eventuelt kan du sende oss en e-post på <a href="codinghjornet@gmail.com">codinghjornet@gmail.com</a></em></p>
+<hr>
+<p>When dealing with quantitative methods, it can be very relevant to look at predictive models. These models help to “predict” a value based on a coefficient (as obtained through a linear model). The formula for a predictive model is not very complicated:</p>
+<p><span class="math inline">\(\hat{y} = ax + b\)</span></p>
+<p>Where <span class="math inline">\(a\)</span> is the slope of the regression (coefficient of independent variable). In turn, <span class="math inline">\(x\)</span> is the predicted value you want to get a value from. Lastly, <span class="math inline">\(b\)</span> is the intercept for y (dependent variable).</p>
+<p>To simplify and understand how this formula works, consider the following minimal example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">50</span>, <span class="dv">60</span>, <span class="dv">75</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>height <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">160</span>, <span class="dv">165</span>, <span class="dv">170</span>, <span class="dv">175</span>, <span class="dv">180</span>, <span class="dv">165</span>, <span class="dv">168</span>, <span class="dv">175</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here we assign a few values to the new variables <strong>weight</strong> and <strong>height</strong>. <em>These values are artificial, only used for this example.</em></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(height, weight)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(height <span class="sc">~</span> weight, <span class="at">data =</span> df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Next, we assign these variables into a data frame (making it into a dataset). And run the R function <strong>lm()</strong> and assigning that to “model1” to get the regression model for our dependent variable (height) and the independent variable (weight)</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now we summarize <strong>model1</strong>. Here we will get the information we need.</p>
+<p>Now, we have everything we need. For this part, you do not need to use R. Get out a calculator.</p>
+<p>Recall that the formula goes like this: <span class="math inline">\(\hat{y} = ax + b\)</span>. Our <span class="math inline">\(a\)</span> in this example is <span class="math inline">\(0.44147\)</span> because that is the coefficient for “weight”.</p>
+<p>Our formula now then looks like this: <span class="math inline">\(\hat{y} = 0.44147x + b\)</span></p>
+<p>Next, we plot in the value of <span class="math inline">\(b\)</span>: The Y intercept. In this case, it is <span class="math inline">\(140.22678\)</span>. This means, that if your weight is 0 (quite unrealistic), your height would be 140 according to this model. Our formula now looks different: <span class="math inline">\(\hat{y} = 0.44147x + 140.22678\)</span></p>
+<hr>
+<p><strong>Now, we are ready to predict.</strong></p>
+<p>Currently, our formula is not giving any results, because we haven’t input a value yet.</p>
+<p>Let’s say we would like to check how tall a person that weighs 68kg would be. We then have to type this into a calculator: <span class="math inline">\(0.44147*(68)+140.22678\)</span>. This gives us the result: <span class="math inline">\(170.24674\)</span> or <span class="math inline">\(170\)</span> centimeters if we round down. This model can then be used for any values we wish.</p>
+<p>Having a prediction model is great to attempt finding a value of something which you do not actually have a data point on, but by using all the data points and the pattern, we can do so! For this to work however, our linear model, naturally, has to be statistically significant. The artificial test dataset has a very low p-value which makes it very significant and therefore we can do statistical inferences on it.</p>
+<hr>
+<p><em>Any more questions after reading this blog post? Feel free to e-mail us at codinghjornet@gmail.com</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
