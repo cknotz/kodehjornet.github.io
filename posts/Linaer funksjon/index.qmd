@@ -50,7 +50,7 @@ Her representerer:
 
 *Written by Knut Solvig*
 
-*Denne delen av innlegget skulle egentlig være på norsk, men jeg (Knut) begynte bare å skrive engelsk... beklager ;) Dersom du sliter med å forstå på engelsk kan jeg anbefale nettsiden [deepl.com](deepl.com) for å oversette. Eventuelt kan du sende oss en e-post på [codinghjornet\@gmail.com](codinghjornet@gmail.com)*
+*Denne delen av innlegget skulle egentlig være på norsk, men jeg (Knut) begynte bare å skrive engelsk... beklager ;) Dersom du sliter med å forstå på engelsk kan jeg anbefale nettsiden deepl.com for å oversette. Eventuelt kan du sende oss en e-post på codinghjornet\@gmail.com*
 
 ------------------------------------------------------------------------
 
