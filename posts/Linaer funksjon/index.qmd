@@ -58,7 +58,7 @@ When dealing with quantitative methods, it can be very relevant to look at predi
 
 $\hat{y} = ax + b$
 
-Where $a$ is the slope of the regression (coefficient of independent variable). In turn, $x$ is the predicted value you want to get a value from. Lastly, $b$ is the intercept for y (dependent variable).
+Where $a$ is the slope of the regression (coefficient of independent variable). In turn, $x$ is the assumed value of the predictor value. Lastly, $b$ is the intercept for y (dependent variable).
 
 To simplify and understand how this formula works, consider the following minimal example:
 
@@ -106,8 +106,6 @@ Currently, our formula is not giving any results, because we haven't input a val
 
 Let's say we would like to check how tall a person that weighs 68kg would be. We then have to type this into a calculator: $0.44147*(68)+140.22678$. This gives us the result: $170.24674$ or $170$ centimeters if we round down. This model can then be used for any values we wish.
 
-Having a prediction model is great to attempt finding a value of something which you do not actually have a data point on, but by using all the data points and the pattern, we can do so! For this to work however, our linear model, naturally, has to be statistically significant. The artificial test dataset has a very low p-value which makes it very significant and therefore we can do statistical inferences on it.
-
 ------------------------------------------------------------------------
 
-*Any more questions after reading this blog post? Feel free to e-mail us at codinghjornet\@gmail.com*
+*Any more questions after reading this blog post? Feel free to e-mail us at codinghjornet\@gmail.com. We answer e-emails whenever we can, during our work hours.*
