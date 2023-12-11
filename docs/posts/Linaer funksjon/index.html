@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Lineær funksjon</h1>
+      <h1 class="title">Lineær funksjon og prediktive modeller</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">how-to</div>
                 <div class="quarto-category">code</div>
@@ -225,7 +225,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 <p>When dealing with quantitative methods, it can be very relevant to look at predictive models. These models help to “predict” a value based on a coefficient (as obtained through a linear model). The formula for a predictive model is not very complicated:</p>
 <p><span class="math inline">\(\hat{y} = ax + b\)</span></p>
-<p>Where <span class="math inline">\(a\)</span> is the slope of the regression (coefficient of independent variable). In turn, <span class="math inline">\(x\)</span> is the predicted value you want to get a value from. Lastly, <span class="math inline">\(b\)</span> is the intercept for y (dependent variable).</p>
+<p>Where <span class="math inline">\(a\)</span> is the slope of the regression (coefficient of independent variable). In turn, <span class="math inline">\(x\)</span> is the assumed value of the predictor value. Lastly, <span class="math inline">\(b\)</span> is the intercept for y (dependent variable).</p>
 <p>To simplify and understand how this formula works, consider the following minimal example:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -271,9 +271,8 @@ F-statistic: 78.65 on 1 and 6 DF,  p-value: 0.0001144</code></pre>
 <p><strong>Now, we are ready to predict.</strong></p>
 <p>Currently, our formula is not giving any results, because we haven’t input a value yet.</p>
 <p>Let’s say we would like to check how tall a person that weighs 68kg would be. We then have to type this into a calculator: <span class="math inline">\(0.44147*(68)+140.22678\)</span>. This gives us the result: <span class="math inline">\(170.24674\)</span> or <span class="math inline">\(170\)</span> centimeters if we round down. This model can then be used for any values we wish.</p>
-<p>Having a prediction model is great to attempt finding a value of something which you do not actually have a data point on, but by using all the data points and the pattern, we can do so! For this to work however, our linear model, naturally, has to be statistically significant. The artificial test dataset has a very low p-value which makes it very significant and therefore we can do statistical inferences on it.</p>
 <hr>
-<p><em>Any more questions after reading this blog post? Feel free to e-mail us at codinghjornet@gmail.com</em></p>
+<p><em>Any more questions after reading this blog post? Feel free to e-mail us at codinghjornet@gmail.com. We answer e-emails whenever we can, during our work hours.</em></p>
 
 
 </section>
