@@ -3,7 +3,7 @@ title: "Lineær funksjon og prediktive modeller"
 author: "Petter Knardahl & Knut Solvig"
 date: "2023-12-09"
 categories: [how-to, code, linear function, regression, prediction, quantitative, Norwegian, English]
-image: "regression_line.png"
+image: "mtcars.png"
 ---
 
 # **Hva er regresjon?**
@@ -45,6 +45,65 @@ Her representerer:
 -   $Β_1$ (Beta en) er helningskoffisienten, eller endringen i Y for en enhetsendring i X.
 
 -   $ϵ$ (Epsilon) er en tilfeldig feilterm som fanger opp alle andre faktorer som påvirker Y men som ikke er inkludert i modellen.
+
+Den statistiske lineære funksjonen brukes til å modellere forholdet mellom to variabler ved å tilpasse en lineær funksjon til de obeserverte dataene. Da kan man analysere hvordan endringer i den uavhengige variabelen er assosiert med endringer i den avhengige variabelen.
+
+
+
+# En lineær funksjon i R
+
+I dette eksempelet vil jeg bruke datasettet ´mtcars´ som kommer forhåndsinstallert i R. Jeg er interessert i å finne ut av hvor mye drivstoff en bil bruker på en gitt avstand (Miles per Gallon) i forhold til dens vekt (Weight).
+
+Jeg har laget en spredningsplott med en lineær regresjonslinje som viser forholdet mellom ´mpg´ (Miles per Gallon) og ´wt´ (bilens vekt i 1000 lbs).
+
+```{r, eval=FALSE}
+## Linear function in R ##
+
+# Loading package and dataset
+library(tidyverse)
+
+# Fitting a linear model
+model <- lm(mpg ~ wt, data = mtcars)
+
+# Extracting coefficients
+intercept <- round(coef(model)[1], 2)
+slope <- round(coef(model)[2], 2)
+
+# Creating the functions string
+equation <- paste("mpg = ", intercept, " + ", slope, "*wt")
+
+# The plot
+mtcars %>% 
+  ggplot(aes(x = wt, y = mpg)) +
+  geom_point(color = "black") +
+  geom_smooth(method = "lm", color = "red") + 
+  labs(x = "Weight (1000 lbs)",
+       y = "Miles per Gallon",
+       title = "MPG by Weight") +
+  annotate("text", x = max(mtcars$wt) * 0.6, y = max(mtcars$mpg) * 0.9,
+           label = equation, hjust = 0, color = "black", size = 4) +
+  theme_bw()
+
+
+```
+
+Ved å kjøre denne koden vil du få denne spredningsplotten.
+
+![](mtcars.png)
+
+**Tolkning**
+
+Hvert enkelt punkt i spredningsplottet representerer en bil fra ´mtcars´datasettet. X-aksen viser bilens vekt mens Y-aksen viser bilens drivstoffeffektivitet.
+
+Den røde linjen er et resultat av en lineær regresjonsanalyse. Denne linjen representerer det best passende forholdet mellom bilens vekt og dens drivstoffeffektivitet.
+
+Konstantleddet er 37.29. Den representerer gjennomsnittsverdien av ´mpg´(Miles per Gallon) når ´wt´ (Weight) er lik null. Dette er et teoretisk punkt for i den ekte verden så kan ikke en bil ha null vekt. Likevel så er det viktig for å si noe om den lineære sammenhengen.
+
+Helningskoffisienten er -5.34. Denne verdien sier noe om hvor mye ´mpg´ (Miles per Gallon) er forventet å endre seg i forhold til en enhetsøkning i bilens vekt. En negativ helning som i dette tilfellet, indikerer at dersom vekten økes så vil drivstoffeffektiviteten minke.
+
+Vår lineære regresjonslinje har en negativ helning som indikrerer en negativ korrelasjon mellom bilens vekt og dens drivstoffeffektivitet. Det betyr at tyngre biler har en tendens til å være mindre drivstoffeffektive.
+
+Jo nærmere datapunktene er til den lineære regresjonslinjen jo sterkere er forholdet mellom drivstoffeffektivitet og vekt. Dersom punktene er mer spredt rundt linjen så antyder det at det er andre faktorer som også har innflytelse på bilens drivstoffeffektivitet.
 
 # Linear regression - predictive model
 
