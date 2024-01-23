@@ -48,8 +48,6 @@ Her representerer:
 
 Den statistiske lineære funksjonen brukes til å modellere forholdet mellom to variabler ved å tilpasse en lineær funksjon til de obeserverte dataene. Da kan man analysere hvordan endringer i den uavhengige variabelen er assosiert med endringer i den avhengige variabelen.
 
-
-
 # En lineær funksjon i R
 
 I dette eksempelet vil jeg bruke datasettet ´mtcars´ som kommer forhåndsinstallert i R. Jeg er interessert i å finne ut av hvor mye drivstoff en bil bruker på en gitt avstand (Miles per Gallon) i forhold til dens vekt (Weight).
