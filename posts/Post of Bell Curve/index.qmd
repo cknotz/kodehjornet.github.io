@@ -49,8 +49,9 @@ A right-skewed distribution is basically the same theory as a left-skewed one. H
 
 ![](right_skewed.png){width="327"}
 
-# **How to read skewness when it is not graphically
-presented**
+# \*\*How to read skewness when it is not graphically
+
+presented\*\*
 
 Now, if the skewness would be 0, it would mean that the distribution is perfectly surrounding the mean, which is hard if not impossible with real world data. If the number is negative, however, it means that the distribution is right-skewed, how much depends on the actual number. A number below -1 amounts to a high right-skewness, and the same if the number is +1.
 

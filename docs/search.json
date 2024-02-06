@@ -126,11 +126,53 @@
     "text": "Why is all this important?\nSkewness and kurtosis are both important. Though, skewness is more looked at than kurtosis and your focus should therefore reside on this. However, knowing what kurtosis means and is, is useful.\nA skewed distribution can affect the way that we do inferences of our data. That is why we need to know about skewness. For example, if you’re doing analysis of a variable and find that it has a right-skewed distribution, it might not be ideal to use for inferences in the same way as a bell-curve/normal distribution. Some statistical models might also not work well if this is the case.\nThank you for reading, I hope you are now a little bit smarter around the topic of the normal distribution - also called a bell curve."
   },
   {
+    "objectID": "posts/Bok_anbefalinger/index.html",
+    "href": "posts/Bok_anbefalinger/index.html",
+    "title": "Litteratur anbefalinger for R",
+    "section": "",
+    "text": "Programmering kan være vanskelig å sette seg inn i. Det trengs en del logisk tenkning for å forstå hvordan et programmeringsspråk er satt sammen. Heldigvis, er R et programmeringsspråk som går under “high level programming language”, som vil si at språket er mer menneske vennlig enn datamaskin vennlig. Om språket hadde vært lavest mulig “low level code” ville det vært koding med bare 1’ere og 0’ere, altså binær kode… da hadde de aller flest slitt med å få noe gjort.\nDa vi skjønner at R kan være kompleks og til tider frustrerende å forstå, har vi noen forslag til bøker som kan være nyttige for nybegynnere, men også andre. Noen er norske, men også noen engelske. Disse bøkene fungerer som et supplement til pensum i BST290 - Kvantitativ forskningsmetode, da boken til Kellstedt & Whitten er veldig god for å forstå teorien bak kvantitativ metode, men ikke nødvendigvis for å lære seg R og logikken bak programmeringsspråk."
+  },
+  {
+    "objectID": "posts/Bok_anbefalinger/index.html#lær-deg-r",
+    "href": "posts/Bok_anbefalinger/index.html#lær-deg-r",
+    "title": "Litteratur anbefalinger for R",
+    "section": "Lær Deg R",
+    "text": "Lær Deg R\n“Lær Deg R”, skrevet av Silje Synnøve Lyder Hermansen er en fin bok på norsk for å forstå grunnleggende R. Med denne boken vil du kunne få en del praktisk erfaring med å bruke R, samt at det følger med et datasett og eksempel oppgaver man kan jobbe med underveis. Boken finnes kun i fysisk format.\nKjøp boken her.\n\n\n\nLær deg R cover"
+  },
+  {
+    "objectID": "posts/Bok_anbefalinger/index.html#the-book-of-r",
+    "href": "posts/Bok_anbefalinger/index.html#the-book-of-r",
+    "title": "Litteratur anbefalinger for R",
+    "section": "The Book of R",
+    "text": "The Book of R\n“The Book of R” skrevet av Tilman M. Davies er en mer teknisk bok, men går også mer detaljert inn i R sine funksjoner. Boken er på engelsk og ligger ute gratis på nett.\nLast ned boken her.\n\n\n\nThe Book of R cover"
+  },
+  {
+    "objectID": "posts/Bok_anbefalinger/index.html#hands-on-programming-with-r",
+    "href": "posts/Bok_anbefalinger/index.html#hands-on-programming-with-r",
+    "title": "Litteratur anbefalinger for R",
+    "section": "Hands-on programming with R",
+    "text": "Hands-on programming with R\n“Hands-on programming with R” skrevet av Garrett Grolemund er en grei nybegynnervennlig bok som ligger gratis tilgjengelig på nett. Den er også på engelsk.\nLast ned boken her.\n\n\n\nHands-on programming with R cover"
+  },
+  {
+    "objectID": "posts/Bok_anbefalinger/index.html#r-for-political-data-science",
+    "href": "posts/Bok_anbefalinger/index.html#r-for-political-data-science",
+    "title": "Litteratur anbefalinger for R",
+    "section": "R for Political Data Science",
+    "text": "R for Political Data Science\n“R for Political Data Science” skrevet av Francisco Urdinez og Andres Cruz er en bok for dem som studerer statsvitenskap og ønsker en ekstra innføring i hvordan R og statistikk passer sammen i en statsvitenskapelig verden. Boken er på engelsk og bruker pakker som *tidyverse* for å gi en god forståelse. Boken er tilgjengelig via Universitetsbiblioteket på UiS.\nKjøp boken her\nFinn boken på biblioteket her (Ebok)\n\n\n\nR for Political Data Science cover"
+  },
+  {
+    "objectID": "posts/Bok_anbefalinger/index.html#r-for-data-science",
+    "href": "posts/Bok_anbefalinger/index.html#r-for-data-science",
+    "title": "Litteratur anbefalinger for R",
+    "section": "R for Data Science",
+    "text": "R for Data Science\n“R for Data Science” skrevet av Garrett Grolemund og Hadley Wickham er en bok som er mer rettet mot ingeniører enn samfunnsvitere, men det er absolutt en god egenskap og kunne tilegne seg kunnskap som er mer teknisk innrettet. Boken ligger gratis på nett, så man taper ingenting på å gi boken et forsøk. Boken er engelsk, bruker også *tidyverse* samtidig som den har oppgaver det er mulig og gjøre mens du leser for å forstå konseptene bedre og i mer detalj.\nLast ned boken her.\n\n\n\nR for Data Science cover"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Kodehjørnet ved UiS",
     "section": "",
-    "text": "The different types of distributions\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\ncase\n\n\nselection\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nJan 23, 2024\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nLineær funksjon og prediktive modeller\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\nlinear function\n\n\nregression\n\n\nprediction\n\n\nquantitative\n\n\nNorwegian\n\n\nEnglish\n\n\n\n\n\n\n\n\n\n\n\nDec 9, 2023\n\n\nPetter Knardahl & Knut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nVanlige problemer i R\n\n\n\n\n\n\n\nhow-to\n\n\nnorwegian\n\n\nproblem\n\n\n\n\n\n\n\n\n\n\n\nNov 14, 2023\n\n\nKaroline Rugaard\n\n\n\n\n\n\n  \n\n\n\n\nProblemer med Norske bokstaver i R? (ÆØÅ)\n\n\n\n\n\n\n\nhow-to\n\n\nnorwegian\n\n\nbug\n\n\n\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPetter Knardahl\n\n\n\n\n\n\n  \n\n\n\n\nHvordan importere data fra SSB\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\nSSB\n\n\nstatistisk sentralbyrå\n\n\nquantitative\n\n\nNorwegian\n\n\n\n\n\n\n\n\n\n\n\nNov 7, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to the Coding Corner!\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 26, 2023\n\n\nKnut Solvig and Petter Knardahl\n\n\n\n\n\n\n  \n\n\n\n\nCase selection 101\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\ncase\n\n\nselection\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\nNo matching items"
+    "text": "Litteratur anbefalinger for R\n\n\n\n\n\n\n\nnorwegian\n\n\nliterature\n\n\nbooks\n\n\nR\n\n\nprogramming\n\n\nadvice\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nThe different types of distributions\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\ncase\n\n\nselection\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nJan 23, 2024\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nLineær funksjon og prediktive modeller\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\nlinear function\n\n\nregression\n\n\nprediction\n\n\nquantitative\n\n\nNorwegian\n\n\nEnglish\n\n\n\n\n\n\n\n\n\n\n\nDec 9, 2023\n\n\nPetter Knardahl & Knut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nVanlige problemer i R\n\n\n\n\n\n\n\nhow-to\n\n\nnorwegian\n\n\nproblem\n\n\n\n\n\n\n\n\n\n\n\nNov 14, 2023\n\n\nKaroline Rugaard\n\n\n\n\n\n\n  \n\n\n\n\nProblemer med Norske bokstaver i R? (ÆØÅ)\n\n\n\n\n\n\n\nhow-to\n\n\nnorwegian\n\n\nbug\n\n\n\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPetter Knardahl\n\n\n\n\n\n\n  \n\n\n\n\nHvordan importere data fra SSB\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\nSSB\n\n\nstatistisk sentralbyrå\n\n\nquantitative\n\n\nNorwegian\n\n\n\n\n\n\n\n\n\n\n\nNov 7, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to the Coding Corner!\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 26, 2023\n\n\nKnut Solvig and Petter Knardahl\n\n\n\n\n\n\n  \n\n\n\n\nCase selection 101\n\n\n\n\n\n\n\nhow-to\n\n\ncode\n\n\ncase\n\n\nselection\n\n\nquantitative\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nKnut Solvig\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
