@@ -3,14 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "kodehjornet.github.io"
+  title: "KODEHJØRNET // THE CODING CORNER"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/kodehjornet/kodehjornet.github.io
 format:
   html:
     theme: journal
