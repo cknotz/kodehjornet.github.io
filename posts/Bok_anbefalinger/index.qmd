@@ -36,7 +36,7 @@ Da vi skjønner at R kan være kompleks og til tider frustrerende å forstå, ha
 
 [Last ned boken her.](https://rstudio-education.github.io/hopr/)
 
-![Hands-on programming with R cover](images/handson.png){alt="Hands-on programming with R cover" fig-align="left"}
+![Hands-on programming with R cover](images/handson.png){fig-align="left"}
 
 ## R for Political Data Science
 
